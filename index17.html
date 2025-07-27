@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            padding: 10px;
+        }
+
+        .hero-section {
+            height: 100vh;
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup {
+            direction: rtl;
+            width: 400px;
+            /* height: 200px; */
+            background-color: red;
+            /* position: fixed; */
+            /* position: fixed; */
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .border {
+            border: 5px solid black;
+        }
+
+        .bg-yellow {
+            background-color: yellow;
+        }
+
+        .bg-blue {
+            background-color: rgb(55, 0, 255);
+        }
+
+        .popup-header {
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+
+        .popup-content {
+            background-color: white;
+            height: 300px;
+        }
+
+        .x {
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            position: absolute;
+            top: 5px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero-section ">
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+    </div>
+    <div class="hero-section bg-yellow">
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+    </div>
+    <div class="hero-section bg-blue">
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+    </div>
+    <div class="popup">
+        <span class="x">x</span>
+        <div class="popup-header">
+            <span>چت آنلاین</span>
+            <span>مرکز تماس: 91094400-021</span>
+        </div>
+        <div class="popup-content"></div>
+    </div>
+</body>
+
+</html>
